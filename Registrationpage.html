@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1{
+  color: black;
+  text-align: center;
+} 
+p{
+      float:right;
+      font-size:190%;
+      text-decoration:underline
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+</style>
+</head>
+<body>
+<h1>REGISTRATION PAGE:</h1>
+<a href="https://www.iiit.ac.in"><img src="https://www.iiit.ac.in/img/iiit-new.png" width="150" height="100"></a>
+<a href="https://serc.iiit.ac.in/rdip"><p>RDIP</p></a>
+<ul>
+  <li><a class="active" href="Homepage.html">Home</a></li>
+  <li><a href="Registrationpage.html">Registration Form</a></li>
+</ul><br></br>
+<form action="Detailspage.html" method="GET">
+  <label for="fname">First name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="fname" name="fname" value=" " style="border-radius:5px"><br><br>
+
+  <label for="E-mail">E-mail:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="E-mail" name="lname" value=" " style="border-radius:5px"><br><br>
+
+  <label for="phone no">Phone NO:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="Phone no" name="cname" value=" " style="border-radius:5px"><br><br>
+  
+    <label for="Gender">Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <input type="radio" id="Male" name="Gender" value="Male">
+  <label for="Male">Male</label>&nbsp
+  
+  <input type="radio" id="Female" name="Gender" value="Female">
+  <label for="Female">Female</label>&nbsp
+
+  <input type="radio" id="Other" name="Gender" value="Other">
+  <label for="Other">Other</label><br><br><br>
+
+<label for="Reason for RDIP">Reason for RDIP:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <input type="radio" id="HTML" name="Reason for RDIP" value="HTML">
+  <label for="HTML">HTML</label>&nbsp
+  
+  <input type="radio" id="CSS" name="Reason for RDIP" value="CSS">
+  <label for="CSS">CSS</label>&nbsp
+
+  <input type="radio" id="Javascript" name="Reason for RDIP" value="Javascript">
+  <label for="Javascript">Javascript</label><br><br>
+
+ <label for="cname">College name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="cname" name="fname" value=" " style="border-radius:5px"><br><br>
+
+
+  <input type="radio" id="Declaration" name="Declaration" value="I declare above details given by me are true.">
+  <label for="I declare above details given by me are true.">I declare above details given by me are true.</label><br><br><br>
+
+<input type="submit" value="submit" style="border-radius:5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="Registrationpage.html"><button type="button" style="border-radius:5px">Reset</button></a>
+</form>
+</body>
+</html>
