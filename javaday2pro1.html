@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LIFE LESSON</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<title>jQuery fadeIn fadeOut</TITLE>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+// javascript function for fade effect toggling
+	function fadeToggle(div_id, button) {
+
+		if (button.value == 'Fade Out') {
+			$('#' + div_id).fadeOut('slow');
+			button.value = 'Fade In';
+		} else {
+			$('#' + div_id).fadeIn(2000);
+			button.value = 'Fade Out';
+		}
+	}
+	
+	function fadeToToggle(div_id, button) {
+
+		if (button.value == 'FadeTo 50%') {
+			$('#' + div_id).fadeTo('slow' , 0.5);
+			button.value = 'FadeTo 100%';
+		} else {
+			$('#' + div_id).fadeTo(4000 , 1.0);
+			button.value = 'FadeTo 50%';
+		}
+	}
+</script>
+<script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#gfg").toggle(); 
+            }); 
+        }); 
+    </script> 
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("demo_test.asp", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("demo_test_post.asp",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:20px;
+    text-align:center;
+    background-color:red;
+    font-size:30px;
+}
+.divClass2
+{
+    padding:20px;
+    text-align:center;
+    background-color:green;
+    font-size:30px;
+}
+body,input {
+	font-family: Helvetica, Arial;
+}
+
+#fade, #fadeTo {
+	font-size:30px;
+}
+#gfg { 
+           font-size:30px; 
+            text-align: center; 
+        } 
+</style>
+</head>
+<body>
+<div class="divClass1">“Live as if you were to die tomorrow. ..." </div><br><br>
+
+<input type="button" value="Fade Out" onclick="fadeToggle('fade', this)" />
+	<br><br>
+	
+	<div id="fade">“Don't let yesterday take up too much of today.” ...</div>
+	<br>
+	
+	<input type="button" value="FadeTo 50%" onclick="fadeToToggle('fadeTo', this)" /><br><br>
+	<div id="fadeTo">“If you are working on something that you really care about, you don't have to be pushed."</div><br><br>
+
+ <div id="gfg">“Attitude is a choice.<br> Happiness is a choice.<br> Optimism is a choice.<br> Kindness is a choice.<br> Giving is a choice.<br>Respect is a choice.<br> Whatever choice you make makes you."<br>"CHOOSE WISELY.”</div> 
+  
+    <button>just tap to hide</button>
+<button>Send an HTTP GET request to a page and get the result back</button>
+<button>Send an HTTP POST request to a page and get the result back</button>
+</body>
+</html>

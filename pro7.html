@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Want to know today's date?</title>
+</head>
+<body>
+ <button type="button" onclick="date()">Date is in console</button>
+<hr>
+number:<input type="text" id="number" oninput="checking()"></input>
+<hr>
+number:<input type="text" id="n"></input>
+result:<button type= "button" onclick="fibonacci()">result</button>
+<hr>
+     <input id="error" type="text" />
+    <button type="button" onclick="error()">Check</button>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <hr />
+
+    <p id="count">
+      
+    </p>
+    <button onclick="count()">Click</button><br />
+    <span id="five"></span>
+    <span id="seven"></span>
+    <span id="ten"></span>
+<script>
+    function date(){
+    var a=new Date();
+    var b=a.getDate();
+    var c=a.getMonth()+1;
+    var d=a.getFullYear();
+   console.log(b+"/"+c+"/"+d);
+}
+function checking() {
+  var a= parseInt(document.getElementById("number").value);
+  if(a<10 && a>100)
+  {
+    alert("Number is in the range 10-100");
+  } 
+  else
+  {
+    alert("Number is not in the range 10-100");
+  }
+}
+/*FIBONACCI SERIES*/
+  function fib() {
+   var number=parseInt(document.getElementById("n").value);
+   a=[0,1];
+   for(var i = 2 ; i <= number; i++) {
+   previous_first + previous_second;
+   previous_second = next;
+   a.push(next);
+ }
+ document.write(a);
+}
+/Error handling/
+
+function err() {
+  var message, x;
+  message = document.getElementById("p1");
+  message1 = document.getElementById("p2");
+  x = document.getElementById("err").value;
+  try {
+   if (x == "")throw "nill";
+   if (isNaN(x)) throw "not a number";
+   x = Number(x);
+   if (x < 1) throw "less";
+   if (x > 10) throw "more";
+  }catch (err) {
+   message.innerHTML ="Input is " + err;
+  } finally {
+   message1.innerHTML = "Finally Block Executed :";
+ }
+}
+/* 5t word from para*/
+      function count() {
+        var five_ = document.getElementById("five");
+        var seven_ = document.getElementById("seven");
+        var ten_ = document.getElementById("ten");
+        var st =
+          "  JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most  well-known as the scripting language for Web pages, many non-browser  environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat";
+        var res = st.split(" ");
+        var five = res[6];
+        var seven = res[8];
+        var ten = res[11];
+        five_.innerHTML = " <h4>5<sup>th</sup> word :" + five + "</h4>";
+        seven_.innerHTML = " <h4>7<sup>th</sup> word :  " + seven + "</h4>";
+        ten_.innerHTML = " <h4>10<sup>th</sup> word : " + ten + "</h4>";
+        +"</h4>";
+      }
+</script>
+</body>
+</html>
+button class="btn btn-success my-4 my-sm-2 
